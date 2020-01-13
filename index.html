@@ -22,9 +22,19 @@ section {
     border-bottom: 1px solid #ddd;
     opacity: 0.25;
     font-size: 26px;
+    a-color: #ff6600;
     color: #ffffff;
+    line-height: 150%;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
+}
+a:link, a:visited {
+    color: #ff6600;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #fC766A;
+    text-decoration: none;
 }
 section.active {
     opacity: 1;
@@ -42,19 +52,19 @@ section:last-child {
         <h2>Mattia Amadio, PhD</h2>
         <h3>Disastrologist and map ennthusiast</h3><br>
 	<center><img src="https://www.cmcc.it/wp-content/uploads/2012/04/Foto-Amadio-1.jpg" width=50%></center>
-        <p>Since my master thesis, my research has focused on estimating the economic risk triggered by natural hazards and, consequently, understanding the relationships between climate change and the frequency of extreme events.
-
-a flood risk modelling framework which covers the spatial representation of economic value, the characterisation of hazard magnitude in relation to climate variables, and the elaboration of updated, reliable damage models. He runs the climate service FLOOD-MAGE, which is a tool for the estimation of economic costs triggered by flood events.<br><br>Scroll down to see my education and work experiences.<br><br></p>
+	<p>Post-doc researcher at CMCC foundation
+        <p>Since my master thesis, my research has focused on estimating the economic risk triggered by natural hazards and, consequently, understanding the relationships between climate change and the frequency of extreme events.<br><br>My research activity have been dedicated in large part to flood risk in different place of the Earth.<br>
+My objective have been do develop a spatial-explicit framework for risk assessment which could be practically employed for cost estimation of flood risk. This research culminated in the release of the climate service <b>FLOOD-MAGE</b>.<br><br>Scroll down to see my education and work experiences.<br><br></p>
     </section>
     <section id='section1' class='active'><br><br><br><br><br>
         <h3>Bachelor and Master Degree</h3>
-        <p>My bachelor is in "Environmental Sciences", a multi-disciplinary three-years degree held at Ca'Foscari University of Venice.<br><br>
-           After that, I got a joint-degree master in "Sustainable Development" with a six month period spent at the Utrecht Universiteit, in the Department of Geography (EGEA).<br><br>
-           My master thesis "Looking forward from the past" is related to flood damage modelling in reference to an extreme event of the past, and it was developed during an internship at Fondazione Eni Enrico Mattei.</p>
+        <p>My bachelor is in <b>Environmental Sciences</b>, a multi-disciplinary three-years degree held at Ca'Foscari University of Venice.<br><br>
+           After that, I got a joint-degree master in <b>Sustainable Development</b> with a six month period spent at the Utrecht Universiteit, in the Department of Geography.<br><br>
+           My master thesis <i><b>Looking forward from the past</b></i> is related to flood damage modelling in reference to an extreme event of the past, and it was developed during an internship at research center <b>Fondazione Eni Enrico Mattei</b>.</p>
     </section>
     <section id='section2'><br><br><br><br><br>
         <h3>Doctorate Degree</h3>
-        <p>In 2018 I finished my PhD in "Science and management of Climate Change" at the Ca' Foscari University.</p>
+        <p>From 2015 to 2018 I carried out my PhD in <b>Science and management of Climate Change</b> at the Ca' Foscari University defending a thesis titled <i><b>Integrated framework for flood risk assessment in Italy</b></i>. The thesis (<a href="http://dspace.unive.it/handle/10579/14965">open access</a>) consists of four papers published on peer-reviewed, non-predatory online journals.</p><p>I spent two semester abroad as a visiting PhD student:<ul><li>one semester at the <b>Integrated Catchment Assessment and Management center (iCAM)</b>, Australian National University, under the supervision of Prof. Tony Jakeman;<li>one semester at the <b>Institute for Environmental Studies (IVM)</b>, Amsterdam Vrije Univeriteit, under the supervision of Prof. Philip Ward.</ul>
     </section>
     <section id='section3'><br><br><br><br><br>
         <h3>Consultancy work</h3>
@@ -75,35 +85,35 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibG92bHkiLCJhIjoiY2l2cm01NG4yMDVjaDJvbjIxOXNqN
 var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/lovly/ck5cbdvgf046r1ckwyue5yhbi',
-center: [-77.38, 39], 
-zoom: 3 
+center: [0, 0], 
+zoom: 2 
 });
 var chapters = {
     'welcome': {
-        bearing: -0,
+        bearing: 0,
         center: [0, 0],
         zoom: 2,
         speed: 2,
         pitch: 0
     },
     'section1': {
-        bearing: 0,
-        center: [12.338,45.433],
-        zoom: 15.8,
+        bearing: -13.16,
+        center: [12.34,45.45],
+        zoom: 12.5,
         speed: 2,
-        pitch: 40
+        pitch: 60
     },
     'section2': {
-        center: [-122.316235, 47.605958],
-        bearing: 54.40,
-        zoom: 12.59,
+        center: [70.60, 0],
+        bearing: 0,
+        zoom: 2.7,
         speed: 2,
-        pitch: 44.50
+        pitch: 32
     },
     'section3': {
         bearing: 0.80,
         center: [-77.043, 38.899],
-        zoom: 17.56,
+        zoom: 15.56,
         speed: 2.5,
         pitch: 60.00
     },
