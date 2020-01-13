@@ -20,7 +20,7 @@
 }
 #features {
     width: 30%;
-    margin-right: 50%;
+    margin-left: 50%;
     font-family: Tw Cen MT;
     overflow-y: scroll;
     background-color: #ffffff;
@@ -40,7 +40,7 @@ section:last-child {
     margin-bottom: 1000px;
 }
 </style>
-
+<div id='map'></div>
 <div id='features'>
     <section id='welcome' class='active'>
         <h2>Mattia Amadio, PhD</h2>
@@ -57,17 +57,17 @@ section:last-child {
         <h3>Doctorate Degree</h3>
         <p>In 2018 I finished my PhD in "Science and management of Climate Change" at the Ca' Foscari University.</p>
     </section>
-    <section id='section4'>
+    <section id='section3'>
         <h3>Section 3</h3>
         <p>Or even gifs! <br><br><iframe src="https://giphy.com/embed/fpXxIjftmkk9y" width="224" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
         </p>
     </section>
-    <section id='section7'>
+    <section id='section4'>
         <h3>Time to make your own</h3>
         <p>Have fun!<br><br><iframe src="https://giphy.com/embed/lJNoBCvQYp7nq" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p></p>
     </section>
 </div>
-<div id='map'></div>
+
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibG92bHkiLCJhIjoiY2l2cm01NG4yMDVjaDJvbjIxOXNqNW5xcSJ9.3cVdFcvvONA67pawH8cHCQ';
 var map = new mapboxgl.Map({
@@ -113,27 +113,6 @@ var chapters = {
         zoom: 16.57,
         speed: 0.6,
         pitch: 45
-    },
-    'section5': {
-        bearing: 15.20,
-        center: [29.027289, 41.013899],
-        zoom: 10.56,
-        pitch: 40.50,
-        speed: 0.6
-    },
-    'section6': {
-        bearing: 0,
-        center: [-63.594167, -17.701427],
-        zoom: 5.53,
-        pitch: 0,
-        speed: 0.6
-    },
-    'section7': {
-        bearing: -0,
-        center: [27.230526, 0.000000],
-        zoom: 1.18,
-        speed: 0.8,
-        pitch: 0
     },
 };
 // On every scroll event, check which element is on screen
