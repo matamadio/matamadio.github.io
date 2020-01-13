@@ -23,7 +23,7 @@
     margin-left: 50%;
     font-family: Tw Cen MT;
     overflow-y: scroll;
-    background-color: #ACACAC;
+    background-color: #88acb6;
 }
 section {
     padding:  25px 50px;
@@ -72,8 +72,8 @@ section:last-child {
 mapboxgl.accessToken = 'pk.eyJ1IjoibG92bHkiLCJhIjoiY2l2cm01NG4yMDVjaDJvbjIxOXNqNW5xcSJ9.3cVdFcvvONA67pawH8cHCQ';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/lovly/ck5cbdvgf046r1ckwyue5yhbi',
-        bearing: -0,
+    style: 'mapbox://styles/mapbox/navigation-v10',
+        bearing: 0,
         center: [45.439720, 12.3319406],
         zoom: 2,
         speed: 2,
@@ -81,7 +81,7 @@ var map = new mapboxgl.Map({
 });
 var chapters = {
     'welcome': {
-        bearing: -0,
+        bearing: 0,
         center: [45.439720, 12.3319406],
         zoom: 2,
         speed: 2,
